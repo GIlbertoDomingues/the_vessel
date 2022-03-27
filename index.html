@@ -27,9 +27,17 @@
         <img id="myimg" class="image-01" src="./images/01.jpg" >
       </div>
 
-      <h4 class="text-slide1">Your platform for self-discovery</h4>
-      <h4 class="text-slide1">Cutting edge knowledge that speaks to your nature, helping you to break through your social</h4>
-      <h4 class="text-slide1">conditioning and meet the unexplored potential you carry within.</h4>
+      <div class="wrap-text-slide-01">
+
+        <h4 class="text-slide1">Your platform for self-discovery</h4>
+        <h4 class="text-slide1">Cutting edge knowledge that speaks to your nature, helping you to break through your social</h4>
+        <h4 class="text-slide1">conditioning and meet the unexplored potential you carry within.</h4>
+        <button class="btn-primary">View courses</button>
+      </div>
+
+      <div class="wrap-text-slide-02">
+        <h4 class="text-slide1">Cutting edge knowledge that speaks to your nature, helping you to break through your social conditioning and meet the unexplored potential you carry within.</h4>
+      </div>
 
     </section>
   </main>
@@ -91,7 +99,7 @@
 
   var scene2 = new ScrollMagic.Scene({
     triggerElement:'#imagesequence',
-    duration: 600,
+    duration: 900,
     reverse: true
   })
   .setPin('#imagesequence')
@@ -121,6 +129,12 @@
       lax.addElements(".scroll-indicator", {
         scrollY: {
           opacity: [["screenHeight*0.05", "screenHeight*0.25"], [1, 0]],
+        }
+      });
+      
+      lax.addElements(".wrap-text-slide-01", {
+        scrollY: {
+          opacity: [["screenHeight*3", "screenHeight"], [1, 0]],
         }
       });
       // lax.addElements('.title-motion', {
