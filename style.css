@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.wrapper-motion {
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrap-scroll-indicator {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 180px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.scroll-indicator {
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  transform: rotate(90deg) !important;
+  position: relative;
+}
+
+.scroll-indicator::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  left: 85px;
+  width: 40px;
+  height: 1px;
+  background: white;
+}
+
+
+.motion-world {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition-timing-function: linear;
+}
+.wrap-image-motion {
+
+  height: 120vh;
+}
+
+.wrap-title {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  width: 100vw;
+  height: 100vh;
+  transition: all ease;
+  /* top: -130vh; */
+}
+
+.wrap-title .title-motion {
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+
+  letter-spacing: 3.7em;
+  text-transform: uppercase;
+}
+
+/* .wrap-title::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  height: 200px;
+
+  background: linear-gradient(to top, #000, transparent);
+} */
+
+.wrap-images {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  transition: all ease;
+}
+
+.image-01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* opacity: 0; */
+  transition: all ease;
+  top: -90vh;
+}
+
+.text-slide1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 69px;
+
+  text-align: center;
+  letter-spacing: 0.4em;
+  color: white;
+  text-transform: uppercase;
+  
+  position: relative;
+  z-index: 3;
+
+  width: 60%;
+  margin: 0 auto;
+}
